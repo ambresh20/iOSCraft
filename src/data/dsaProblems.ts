@@ -1,10 +1,15 @@
 import type { DSAProblem } from '../types/dsa';
+import { logicBuildingProblems } from './logic-building';
+import { advancedTopicsProblems } from './advancedTopicsProblems';
 
 // ============================================================
 // DSA PROBLEMS — Swift implementations with full approach detail
 // ============================================================
 
 export const dsaProblems: DSAProblem[] = [
+  ...logicBuildingProblems,
+  ...advancedTopicsProblems,
+
   // ─── ARRAYS ──────────────────────────────────────────────
   {
     id: 'two-sum',
