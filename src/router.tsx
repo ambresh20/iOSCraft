@@ -6,7 +6,8 @@ import { LessonDetail } from './pages/LessonDetail';
 import { Interview } from './pages/Interview';
 import { InterviewDetail } from './pages/InterviewDetail';
 import { DSA } from './pages/DSA';
-import { DSADetail } from './pages/DSADetail';
+import { DSATopicPage } from './pages/DSATopicPage';
+import { DSAProblemPage } from './pages/DSAProblemPage';
 import { Blog } from './pages/Blog';
 import { BlogDetail } from './pages/BlogDetail';
 import { Roadmap } from './pages/Roadmap';
@@ -27,7 +28,8 @@ export const router = createBrowserRouter([
       { path: 'interview', element: <Interview /> },
       { path: 'interview/:slug', element: <InterviewDetail /> },
       { path: 'dsa', element: <DSA /> },
-      { path: 'dsa/:slug', element: <DSADetail /> },
+      { path: 'dsa/:topicSlug', element: <DSATopicPage /> },
+      { path: 'dsa/:topicSlug/:problemSlug', element: <DSAProblemPage /> },
       { path: 'swiftui', element: <SwiftUI /> },
       { path: 'uikit', element: <UIKit /> },
       { path: 'architecture', element: <Architecture /> },
